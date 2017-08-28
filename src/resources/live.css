@@ -1,0 +1,21 @@
+.root{
+    -fx-font-size: 16pt;
+    -fx-font-family: "Courier New";
+    -fx-base: #EA984B;
+}
+
+#canvas{
+    -fx-background-color: #123854;
+}
+
+#Attribute{
+	-fx-background-color: #1D92E8;
+}
+
+#inventory {
+	-fx-background-color: #6B9FC6;
+}
+
+#Layer {
+	-fx-background-color: #6EB3E7;
+}

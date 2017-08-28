@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="data"/>
+	<classpathentry kind="src" path="images/template"/>
+	<classpathentry kind="src" path="images/ImageSelectorDefaults"/>
+	<classpathentry kind="src" path="music"/>
+	<classpathentry kind="src" path="images/plane_fight"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/xstream-1.4.9.jar" sourcepath="lib/xstream-src.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/voogasalad_itworks/lib/xstream-doc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/guava-21.0.jar" sourcepath="lib/guava-21.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/voogasalad_itworks/lib/guava-21.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/Jama-1.0.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

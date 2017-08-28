@@ -1,0 +1,18 @@
+.root {
+	-fx-pref-width: 1200;
+    -fx-pref-height: 5000;
+}
+
+.menu {
+    -fx-pref-width: 50;
+    -fx-alignment: center;
+}
+
+.menu-bar {
+    -fx-pref-height: 15;
+}
+
+#game-root {
+    -fx-min-width: 1200;
+    -fx-min-height: 5000;
+}

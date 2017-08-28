@@ -1,0 +1,544 @@
+<model.ChampionPool>
+  <myChampions>
+    <entry>
+      <string>Champion</string>
+      <gameobject.basics.Hero>
+        <myObject class="gameobject.GameObject">
+          <myID>0</myID>
+          <myName>Champion</myName>
+          <myType>Hero</myType>
+          <myComponents>
+            <entry>
+              <gameobject.component.type.ComponentTypes_-1>
+                <myType class="gameobject.component.type.ComponentType$1" resolves-to="com.google.common.reflect.TypeToken$SimpleTypeToken">
+                  <runtimeType class="java-class">gameobject.component.PhysicsBehavior</runtimeType>
+                </myType>
+              </gameobject.component.type.ComponentTypes_-1>
+              <gameobject.component.PhysicsBehavior>
+                <myPhysicsStrategy class="engine.physicsStrategies.CharacterStrategy">
+                  <RESOURCES__PATH>resources/physics_setup</RESOURCES__PATH>
+                  <COEFF__OF__RESTITUTION__KEY>CHARACTER_RESTITUTION_CONSTANT</COEFF__OF__RESTITUTION__KEY>
+                  <COEFF__OF__RESTITUTION>0.5</COEFF__OF__RESTITUTION>
+                  <gravityOn>true</gravityOn>
+                  <collisionOn>true</collisionOn>
+                  <frictionOn defined-in="engine.physicsStrategies.DefaultStrategy">true</frictionOn>
+                  <frictionOn>true</frictionOn>
+                </myPhysicsStrategy>
+              </gameobject.component.PhysicsBehavior>
+            </entry>
+            <entry>
+              <gameobject.component.type.ComponentTypes_-3>
+                <myType class="gameobject.component.type.ComponentType$1" resolves-to="com.google.common.reflect.TypeToken$SimpleTypeToken">
+                  <runtimeType class="java-class">gameobject.component.Vector2D</runtimeType>
+                </myType>
+                <myName>Acceleration</myName>
+              </gameobject.component.type.ComponentTypes_-3>
+              <gameobject.component.Vector2D>
+                <components enum-type="util.Axes">
+                  <entry>
+                    <util.Axes>X</util.Axes>
+                    <double>0.0</double>
+                  </entry>
+                  <entry>
+                    <util.Axes>Y</util.Axes>
+                    <double>0.0</double>
+                  </entry>
+                </components>
+                <myType class="gameobject.component.type.ComponentTypes$3" reference="../../gameobject.component.type.ComponentTypes_-3"/>
+                <DELTA>1.0</DELTA>
+              </gameobject.component.Vector2D>
+            </entry>
+            <entry>
+              <gameobject.component.type.ComponentTypes_-8>
+                <myType class="gameobject.component.type.ComponentType$1" resolves-to="com.google.common.reflect.TypeToken$SimpleTypeToken">
+                  <runtimeType class="java-class">gameobject.component.Animation</runtimeType>
+                </myType>
+              </gameobject.component.type.ComponentTypes_-8>
+              <gameobject.component.Animation>
+                <myAnimations/>
+                <lasttime>0.0</lasttime>
+              </gameobject.component.Animation>
+            </entry>
+            <entry>
+              <gameobject.component.type.ComponentTypes_-4>
+                <myType class="gameobject.component.type.ComponentType$1" resolves-to="com.google.common.reflect.TypeToken$SimpleTypeToken">
+                  <runtimeType class="java-class">gameobject.component.Scalar</runtimeType>
+                </myType>
+                <myName>Mass</myName>
+              </gameobject.component.type.ComponentTypes_-4>
+              <gameobject.component.Mass>
+                <myVal>85.0</myVal>
+                <myType class="gameobject.component.type.ComponentTypes$4" reference="../../gameobject.component.type.ComponentTypes_-4"/>
+              </gameobject.component.Mass>
+            </entry>
+            <entry>
+              <gameobject.component.type.ComponentTypes_-7>
+                <myType class="gameobject.component.type.ComponentType$1" resolves-to="com.google.common.reflect.TypeToken$SimpleTypeToken">
+                  <runtimeType class="java-class">gameobject.component.Attack</runtimeType>
+                </myType>
+              </gameobject.component.type.ComponentTypes_-7>
+              <gameobject.component.Attack>
+                <myRange>0.0</myRange>
+                <myDamage>0.0</myDamage>
+              </gameobject.component.Attack>
+            </entry>
+            <entry>
+              <gameobject.component.type.ComponentTypes_-16>
+                <myType class="gameobject.component.type.ComponentType$1" resolves-to="com.google.common.reflect.TypeToken$SimpleTypeToken">
+                  <runtimeType class="java-class">gameobject.component.Team</runtimeType>
+                </myType>
+              </gameobject.component.type.ComponentTypes_-16>
+              <gameobject.component.Team>
+                <teamnumber>1</teamnumber>
+              </gameobject.component.Team>
+            </entry>
+            <entry>
+              <gameobject.component.type.ComponentTypes_-10>
+                <myType class="gameobject.component.type.ComponentType$1" resolves-to="com.google.common.reflect.TypeToken$SimpleTypeToken">
+                  <runtimeType class="java-class">gameobject.component.Belongings</runtimeType>
+                </myType>
+              </gameobject.component.type.ComponentTypes_-10>
+              <gameobject.component.Belongings>
+                <myBelongings class="list">
+                  <gameobject.GameObject>
+                    <myID>0</myID>
+                    <myName>Weapon</myName>
+                    <myType>Weapon</myType>
+                    <myComponents>
+                      <entry>
+                        <gameobject.component.type.ComponentTypes_-1 reference="../../../../../../../entry/gameobject.component.type.ComponentTypes_-1"/>
+                        <gameobject.component.PhysicsBehavior>
+                          <myPhysicsStrategy class="engine.physicsStrategies.NullVelocityStrategy">
+                            <RESOURCES__PATH>resources/physics_setup</RESOURCES__PATH>
+                            <COEFF__OF__RESTITUTION__KEY>CHARACTER_RESTITUTION_CONSTANT</COEFF__OF__RESTITUTION__KEY>
+                            <COEFF__OF__RESTITUTION>0.5</COEFF__OF__RESTITUTION>
+                            <gravityOn>false</gravityOn>
+                            <collisionOn>false</collisionOn>
+                            <frictionOn>false</frictionOn>
+                          </myPhysicsStrategy>
+                        </gameobject.component.PhysicsBehavior>
+                      </entry>
+                      <entry>
+                        <gameobject.component.type.ComponentTypes_-8 reference="../../../../../../../entry[3]/gameobject.component.type.ComponentTypes_-8"/>
+                        <gameobject.component.Animation>
+                          <myAnimations/>
+                          <lasttime>0.0</lasttime>
+                        </gameobject.component.Animation>
+                      </entry>
+                      <entry>
+                        <gameobject.component.type.ComponentTypes_-4 reference="../../../../../../../entry[4]/gameobject.component.type.ComponentTypes_-4"/>
+                        <gameobject.component.Mass>
+                          <myVal>10.0</myVal>
+                          <myType class="gameobject.component.type.ComponentTypes$4" reference="../../../../../../../../entry[4]/gameobject.component.type.ComponentTypes_-4"/>
+                        </gameobject.component.Mass>
+                      </entry>
+                      <entry>
+                        <gameobject.component.type.ComponentTypes_-7 reference="../../../../../../../entry[5]/gameobject.component.type.ComponentTypes_-7"/>
+                        <gameobject.component.Attack>
+                          <myRange>0.0</myRange>
+                          <myDamage>0.0</myDamage>
+                        </gameobject.component.Attack>
+                      </entry>
+                      <entry>
+                        <gameobject.component.type.ComponentTypes_-5>
+                          <myType class="gameobject.component.type.ComponentType$1" resolves-to="com.google.common.reflect.TypeToken$SimpleTypeToken">
+                            <runtimeType class="java-class">gameobject.component.Health</runtimeType>
+                          </myType>
+                        </gameobject.component.type.ComponentTypes_-5>
+                        <gameobject.component.Health>
+                          <myMax>100.0</myMax>
+                          <myCurrent>100.0</myCurrent>
+                        </gameobject.component.Health>
+                      </entry>
+                      <entry>
+                        <gameobject.component.type.ComponentTypes_-9>
+                          <myType class="gameobject.component.type.ComponentType$1" resolves-to="com.google.common.reflect.TypeToken$SimpleTypeToken">
+                            <runtimeType class="java-class">gameobject.component.Generator</runtimeType>
+                          </myType>
+                        </gameobject.component.type.ComponentTypes_-9>
+                        <gameobject.component.Generator>
+                          <generate>false</generate>
+                          <generatePosX>0.0</generatePosX>
+                          <generatePosY>0.0</generatePosY>
+                          <generateDiffX>50.0</generateDiffX>
+                          <generateDiffY>0.0</generateDiffY>
+                          <check>false</check>
+                          <generateCount>1</generateCount>
+                          <generator>
+                            <myObject class="gameobject.GameObject">
+                              <myID>0</myID>
+                              <myName>Bullet</myName>
+                              <myType></myType>
+                              <myComponents>
+                                <entry>
+                                  <gameobject.component.type.ComponentTypes_-1 reference="../../../../../../../../../../../../entry/gameobject.component.type.ComponentTypes_-1"/>
+                                  <gameobject.component.PhysicsBehavior>
+                                    <myPhysicsStrategy class="engine.physicsStrategies.ProjectileStrategy">
+                                      <RESOURCES__PATH>resources/physics_setup</RESOURCES__PATH>
+                                      <COEFF__OF__RESTITUTION__KEY>CHARACTER_RESTITUTION_CONSTANT</COEFF__OF__RESTITUTION__KEY>
+                                      <COEFF__OF__RESTITUTION>0.5</COEFF__OF__RESTITUTION>
+                                      <gravityOn>false</gravityOn>
+                                      <collisionOn>true</collisionOn>
+                                      <frictionOn>true</frictionOn>
+                                    </myPhysicsStrategy>
+                                  </gameobject.component.PhysicsBehavior>
+                                </entry>
+                                <entry>
+                                  <gameobject.component.type.ComponentTypes_-8 reference="../../../../../../../../../../../../entry[3]/gameobject.component.type.ComponentTypes_-8"/>
+                                  <gameobject.component.Animation>
+                                    <myAnimations/>
+                                    <lasttime>0.0</lasttime>
+                                  </gameobject.component.Animation>
+                                </entry>
+                                <entry>
+                                  <gameobject.component.type.ComponentTypes_-4 reference="../../../../../../../../../../../../entry[4]/gameobject.component.type.ComponentTypes_-4"/>
+                                  <gameobject.component.Mass>
+                                    <myVal>10.0</myVal>
+                                    <myType class="gameobject.component.type.ComponentTypes$4" reference="../../../../../../../../../../../../../entry[4]/gameobject.component.type.ComponentTypes_-4"/>
+                                  </gameobject.component.Mass>
+                                </entry>
+                                <entry>
+                                  <gameobject.component.type.ComponentTypes_-7 reference="../../../../../../../../../../../../entry[5]/gameobject.component.type.ComponentTypes_-7"/>
+                                  <gameobject.component.Attack>
+                                    <myRange>0.0</myRange>
+                                    <myDamage>60.0</myDamage>
+                                  </gameobject.component.Attack>
+                                </entry>
+                                <entry>
+                                  <gameobject.component.type.ComponentTypes_-16 reference="../../../../../../../../../../../../entry[6]/gameobject.component.type.ComponentTypes_-16"/>
+                                  <gameobject.component.Team>
+                                    <teamnumber>1</teamnumber>
+                                  </gameobject.component.Team>
+                                </entry>
+                                <entry>
+                                  <gameobject.component.type.ComponentTypes_-5 reference="../../../../../../../entry[5]/gameobject.component.type.ComponentTypes_-5"/>
+                                  <gameobject.component.Health>
+                                    <myMax>100.0</myMax>
+                                    <myCurrent>100.0</myCurrent>
+                                  </gameobject.component.Health>
+                                </entry>
+                                <entry>
+                                  <gameobject.component.type.ComponentTypes_-6>
+                                    <myType class="gameobject.component.type.ComponentType$1" resolves-to="com.google.common.reflect.TypeToken$SimpleTypeToken">
+                                      <runtimeType class="java-class">gameobject.component.Collider</runtimeType>
+                                    </myType>
+                                  </gameobject.component.type.ComponentTypes_-6>
+                                  <gameobject.component.Collider>
+                                    <function>
+                                      <util.TriConsumer resolves-to="serialized-lambda">
+                                        <capturingClass>gameobject.basics.CollisionStrategy.TouchExpireStrategy</capturingClass>
+                                        <functionalInterfaceClass>util/TriConsumer</functionalInterfaceClass>
+                                        <functionalInterfaceMethodName>accept</functionalInterfaceMethodName>
+                                        <functionalInterfaceMethodSignature>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V</functionalInterfaceMethodSignature>
+                                        <implClass>gameobject/basics/CollisionStrategy/TouchExpireStrategy</implClass>
+                                        <implMethodName>lambda$1</implMethodName>
+                                        <implMethodSignature>(Lgameobject/IGameObject;Lgameobject/IGameObject;Lutil/Direction;)V</implMethodSignature>
+                                        <implMethodKind>6</implMethodKind>
+                                        <instantiatedMethodType>(Lgameobject/IGameObject;Lgameobject/IGameObject;Lutil/Direction;)V</instantiatedMethodType>
+                                        <capturedArgs/>
+                                      </util.TriConsumer>
+                                    </function>
+                                    <condition>
+                                      <util.SerializablePredicate resolves-to="serialized-lambda">
+                                        <capturingClass>gameobject.basics.CollisionStrategy.TouchExpireStrategy</capturingClass>
+                                        <functionalInterfaceClass>util/SerializablePredicate</functionalInterfaceClass>
+                                        <functionalInterfaceMethodName>test</functionalInterfaceMethodName>
+                                        <functionalInterfaceMethodSignature>(Ljava/lang/Object;)Z</functionalInterfaceMethodSignature>
+                                        <implClass>gameobject/basics/CollisionStrategy/TouchExpireStrategy</implClass>
+                                        <implMethodName>lambda$0</implMethodName>
+                                        <implMethodSignature>(Lgameobject/IGameObject;)Z</implMethodSignature>
+                                        <implMethodKind>6</implMethodKind>
+                                        <instantiatedMethodType>(Lgameobject/IGameObject;)Z</instantiatedMethodType>
+                                        <capturedArgs/>
+                                      </util.SerializablePredicate>
+                                    </condition>
+                                    <surfaceReflectivity class="enum-map" enum-type="util.Direction">
+                                      <entry>
+                                        <util.Direction>UP</util.Direction>
+                                        <boolean>true</boolean>
+                                      </entry>
+                                      <entry>
+                                        <util.Direction>DOWN</util.Direction>
+                                        <boolean>true</boolean>
+                                      </entry>
+                                      <entry>
+                                        <util.Direction>LEFT</util.Direction>
+                                        <boolean>true</boolean>
+                                      </entry>
+                                      <entry>
+                                        <util.Direction>RIGHT</util.Direction>
+                                        <boolean>true</boolean>
+                                      </entry>
+                                    </surfaceReflectivity>
+                                  </gameobject.component.Collider>
+                                </entry>
+                                <entry>
+                                  <gameobject.component.type.ComponentTypes_-2>
+                                    <myType class="gameobject.component.type.ComponentType$1" resolves-to="com.google.common.reflect.TypeToken$SimpleTypeToken">
+                                      <runtimeType class="java-class">gameobject.component.Vector2D</runtimeType>
+                                    </myType>
+                                    <myName>Velocity</myName>
+                                  </gameobject.component.type.ComponentTypes_-2>
+                                  <gameobject.component.Vector2D>
+                                    <components enum-type="util.Axes">
+                                      <entry>
+                                        <util.Axes>X</util.Axes>
+                                        <double>400.0</double>
+                                      </entry>
+                                      <entry>
+                                        <util.Axes>Y</util.Axes>
+                                        <double>0.0</double>
+                                      </entry>
+                                    </components>
+                                    <myType class="gameobject.component.type.ComponentTypes$2" reference="../../gameobject.component.type.ComponentTypes_-2"/>
+                                    <DELTA>1.0</DELTA>
+                                  </gameobject.component.Vector2D>
+                                </entry>
+                              </myComponents>
+                              <expired>false</expired>
+                              <myImagePath>Bullet.png</myImagePath>
+                              <myPosition>
+                                <components enum-type="util.Axes">
+                                  <entry>
+                                    <util.Axes>X</util.Axes>
+                                    <double>0.0</double>
+                                  </entry>
+                                  <entry>
+                                    <util.Axes>Y</util.Axes>
+                                    <double>0.0</double>
+                                  </entry>
+                                </components>
+                                <myType class="gameobject.component.Position$1">
+                                  <myType class="gameobject.component.type.ComponentType$1" resolves-to="com.google.common.reflect.TypeToken$SimpleTypeToken">
+                                    <runtimeType class="java-class">gameobject.component.Vector2D</runtimeType>
+                                  </myType>
+                                  <myName>Position</myName>
+                                </myType>
+                                <DELTA>1.0</DELTA>
+                              </myPosition>
+                              <myDimension>
+                                <components enum-type="util.Axes">
+                                  <entry>
+                                    <util.Axes>X</util.Axes>
+                                    <double>20.0</double>
+                                  </entry>
+                                  <entry>
+                                    <util.Axes>Y</util.Axes>
+                                    <double>20.0</double>
+                                  </entry>
+                                </components>
+                                <myType class="gameobject.component.Dimension$1">
+                                  <myType class="gameobject.component.type.ComponentType$1" resolves-to="com.google.common.reflect.TypeToken$SimpleTypeToken">
+                                    <runtimeType class="java-class">gameobject.component.Vector2D</runtimeType>
+                                  </myType>
+                                  <myName>Dimension</myName>
+                                </myType>
+                                <DELTA>1.0</DELTA>
+                              </myDimension>
+                            </myObject>
+                            <myDescription>An object</myDescription>
+                          </generator>
+                          <deathTime>1.7976931348623157E308</deathTime>
+                          <rebornTime>5.0</rebornTime>
+                          <rebornCheck resolves-to="serialized-lambda">
+                            <capturingClass>gameobject.component.Generator</capturingClass>
+                            <functionalInterfaceClass>util/SerializableBiPredicate</functionalInterfaceClass>
+                            <functionalInterfaceMethodName>test</functionalInterfaceMethodName>
+                            <functionalInterfaceMethodSignature>(Ljava/lang/Object;Ljava/lang/Object;)Z</functionalInterfaceMethodSignature>
+                            <implClass>gameobject/component/Generator</implClass>
+                            <implMethodName>lambda$0</implMethodName>
+                            <implMethodSignature>(Lgameobject/IGameObject;Ljava/lang/Double;)Z</implMethodSignature>
+                            <implMethodKind>6</implMethodKind>
+                            <instantiatedMethodType>(Lgameobject/IGameObject;Ljava/lang/Double;)Z</instantiatedMethodType>
+                            <capturedArgs/>
+                          </rebornCheck>
+                        </gameobject.component.Generator>
+                      </entry>
+                    </myComponents>
+                    <expired>false</expired>
+                    <myImagePath>blank.png</myImagePath>
+                    <myPosition>
+                      <components enum-type="util.Axes">
+                        <entry>
+                          <util.Axes>X</util.Axes>
+                          <double>0.0</double>
+                        </entry>
+                        <entry>
+                          <util.Axes>Y</util.Axes>
+                          <double>0.0</double>
+                        </entry>
+                      </components>
+                      <myType class="gameobject.component.Position$1" reference="../../myComponents/entry[6]/gameobject.component.Generator/generator/myObject/myPosition/myType"/>
+                      <DELTA>1.0</DELTA>
+                    </myPosition>
+                    <myDimension>
+                      <components enum-type="util.Axes">
+                        <entry>
+                          <util.Axes>X</util.Axes>
+                          <double>50.0</double>
+                        </entry>
+                        <entry>
+                          <util.Axes>Y</util.Axes>
+                          <double>50.0</double>
+                        </entry>
+                      </components>
+                      <myType class="gameobject.component.Dimension$1" reference="../../myComponents/entry[6]/gameobject.component.Generator/generator/myObject/myDimension/myType"/>
+                      <DELTA>1.0</DELTA>
+                    </myDimension>
+                  </gameobject.GameObject>
+                </myBelongings>
+              </gameobject.component.Belongings>
+            </entry>
+            <entry>
+              <gameobject.component.type.ComponentTypes_-5 reference="../../entry[7]/gameobject.component.Belongings/myBelongings/gameobject.GameObject/myComponents/entry[5]/gameobject.component.type.ComponentTypes_-5"/>
+              <gameobject.component.Health>
+                <myMax>100.0</myMax>
+                <myCurrent>100.0</myCurrent>
+              </gameobject.component.Health>
+            </entry>
+            <entry>
+              <gameobject.component.type.ComponentTypes_-6 reference="../../entry[7]/gameobject.component.Belongings/myBelongings/gameobject.GameObject/myComponents/entry[6]/gameobject.component.Generator/generator/myObject/myComponents/entry[7]/gameobject.component.type.ComponentTypes_-6"/>
+              <gameobject.component.Collider>
+                <function>
+                  <util.TriConsumer resolves-to="serialized-lambda">
+                    <capturingClass>gameobject.basics.CollisionStrategy.MarioStrategy</capturingClass>
+                    <functionalInterfaceClass>util/TriConsumer</functionalInterfaceClass>
+                    <functionalInterfaceMethodName>accept</functionalInterfaceMethodName>
+                    <functionalInterfaceMethodSignature>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V</functionalInterfaceMethodSignature>
+                    <implClass>gameobject/basics/CollisionStrategy/MarioStrategy</implClass>
+                    <implMethodName>lambda$1</implMethodName>
+                    <implMethodSignature>(Lgameobject/IGameObject;Lgameobject/IGameObject;Lutil/Direction;)V</implMethodSignature>
+                    <implMethodKind>6</implMethodKind>
+                    <instantiatedMethodType>(Lgameobject/IGameObject;Lgameobject/IGameObject;Lutil/Direction;)V</instantiatedMethodType>
+                    <capturedArgs/>
+                  </util.TriConsumer>
+                </function>
+                <condition>
+                  <util.SerializablePredicate resolves-to="serialized-lambda">
+                    <capturingClass>gameobject.basics.CollisionStrategy.MarioStrategy</capturingClass>
+                    <functionalInterfaceClass>util/SerializablePredicate</functionalInterfaceClass>
+                    <functionalInterfaceMethodName>test</functionalInterfaceMethodName>
+                    <functionalInterfaceMethodSignature>(Ljava/lang/Object;)Z</functionalInterfaceMethodSignature>
+                    <implClass>gameobject/basics/CollisionStrategy/MarioStrategy</implClass>
+                    <implMethodName>lambda$0</implMethodName>
+                    <implMethodSignature>(Lgameobject/IGameObject;)Z</implMethodSignature>
+                    <implMethodKind>6</implMethodKind>
+                    <instantiatedMethodType>(Lgameobject/IGameObject;)Z</instantiatedMethodType>
+                    <capturedArgs/>
+                  </util.SerializablePredicate>
+                </condition>
+                <surfaceReflectivity class="enum-map" enum-type="util.Direction">
+                  <entry>
+                    <util.Direction>UP</util.Direction>
+                    <boolean>true</boolean>
+                  </entry>
+                  <entry>
+                    <util.Direction>DOWN</util.Direction>
+                    <boolean>true</boolean>
+                  </entry>
+                  <entry>
+                    <util.Direction>LEFT</util.Direction>
+                    <boolean>true</boolean>
+                  </entry>
+                  <entry>
+                    <util.Direction>RIGHT</util.Direction>
+                    <boolean>true</boolean>
+                  </entry>
+                </surfaceReflectivity>
+              </gameobject.component.Collider>
+            </entry>
+            <entry>
+              <gameobject.component.type.ComponentTypes_-12>
+                <myType class="gameobject.component.type.ComponentType$1" resolves-to="com.google.common.reflect.TypeToken$SimpleTypeToken">
+                  <runtimeType class="java-class">gameobject.component.Actor</runtimeType>
+                </myType>
+                <myName>Champion</myName>
+              </gameobject.component.type.ComponentTypes_-12>
+              <gameobject.component.Actor>
+                <myHSpeed>100.0</myHSpeed>
+                <myVSpeed>200.0</myVSpeed>
+                <myLives>0.0</myLives>
+                <myType class="gameobject.component.type.ComponentTypes$12" reference="../../gameobject.component.type.ComponentTypes_-12"/>
+                <myFacing>RIGHT</myFacing>
+              </gameobject.component.Actor>
+            </entry>
+            <entry>
+              <gameobject.component.type.ComponentTypes_-2 reference="../../entry[7]/gameobject.component.Belongings/myBelongings/gameobject.GameObject/myComponents/entry[6]/gameobject.component.Generator/generator/myObject/myComponents/entry[8]/gameobject.component.type.ComponentTypes_-2"/>
+              <gameobject.component.Vector2D>
+                <components enum-type="util.Axes">
+                  <entry>
+                    <util.Axes>X</util.Axes>
+                    <double>0.0</double>
+                  </entry>
+                  <entry>
+                    <util.Axes>Y</util.Axes>
+                    <double>0.0</double>
+                  </entry>
+                </components>
+                <myType class="gameobject.component.type.ComponentTypes$2" reference="../../../entry[7]/gameobject.component.Belongings/myBelongings/gameobject.GameObject/myComponents/entry[6]/gameobject.component.Generator/generator/myObject/myComponents/entry[8]/gameobject.component.type.ComponentTypes_-2"/>
+                <DELTA>1.0</DELTA>
+              </gameobject.component.Vector2D>
+            </entry>
+            <entry>
+              <gameobject.component.type.ComponentTypes_-9 reference="../../entry[7]/gameobject.component.Belongings/myBelongings/gameobject.GameObject/myComponents/entry[6]/gameobject.component.type.ComponentTypes_-9"/>
+              <gameobject.component.Generator>
+                <generate>false</generate>
+                <generatePosX>0.0</generatePosX>
+                <generatePosY>0.0</generatePosY>
+                <generateDiffX>0.0</generateDiffX>
+                <generateDiffY>0.0</generateDiffY>
+                <check>false</check>
+                <generateCount>1</generateCount>
+                <deathTime>1.7976931348623157E308</deathTime>
+                <rebornTime>5.0</rebornTime>
+                <rebornCheck resolves-to="serialized-lambda">
+                  <capturingClass>gameobject.basics.Hero</capturingClass>
+                  <functionalInterfaceClass>util/SerializableBiPredicate</functionalInterfaceClass>
+                  <functionalInterfaceMethodName>test</functionalInterfaceMethodName>
+                  <functionalInterfaceMethodSignature>(Ljava/lang/Object;Ljava/lang/Object;)Z</functionalInterfaceMethodSignature>
+                  <implClass>gameobject/basics/Hero</implClass>
+                  <implMethodName>lambda$0</implMethodName>
+                  <implMethodSignature>(Lgameobject/IGameObject;Ljava/lang/Double;)Z</implMethodSignature>
+                  <implMethodKind>6</implMethodKind>
+                  <instantiatedMethodType>(Lgameobject/IGameObject;Ljava/lang/Double;)Z</instantiatedMethodType>
+                  <capturedArgs/>
+                </rebornCheck>
+              </gameobject.component.Generator>
+            </entry>
+          </myComponents>
+          <expired>false</expired>
+          <myImagePath>levi.gif</myImagePath>
+          <myPosition>
+            <components enum-type="util.Axes">
+              <entry>
+                <util.Axes>X</util.Axes>
+                <double>50.0</double>
+              </entry>
+              <entry>
+                <util.Axes>Y</util.Axes>
+                <double>150.0</double>
+              </entry>
+            </components>
+            <myType class="gameobject.component.Position$1" reference="../../myComponents/entry[7]/gameobject.component.Belongings/myBelongings/gameobject.GameObject/myComponents/entry[6]/gameobject.component.Generator/generator/myObject/myPosition/myType"/>
+            <DELTA>1.0</DELTA>
+          </myPosition>
+          <myDimension>
+            <components enum-type="util.Axes">
+              <entry>
+                <util.Axes>X</util.Axes>
+                <double>50.0</double>
+              </entry>
+              <entry>
+                <util.Axes>Y</util.Axes>
+                <double>50.0</double>
+              </entry>
+            </components>
+            <myType class="gameobject.component.Dimension$1" reference="../../myComponents/entry[7]/gameobject.component.Belongings/myBelongings/gameobject.GameObject/myComponents/entry[6]/gameobject.component.Generator/generator/myObject/myDimension/myType"/>
+            <DELTA>1.0</DELTA>
+          </myDimension>
+        </myObject>
+        <myDescription></myDescription>
+      </gameobject.basics.Hero>
+    </entry>
+  </myChampions>
+</model.ChampionPool>

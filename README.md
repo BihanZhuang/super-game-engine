@@ -1,86 +1,15 @@
-# VoogaSalad -- ItWorks
+# Super Game Engine -- Game Authoring Engine Project
 
-Game Authoring Engine Project
+Worked on a team of eight students. 
 
-Mike Liu, Xingyu Chen, Bihan Zhuang, Yanbo Fang, Yuxiang He, Wei-Ting Yeh, Yuansong Feng, Gabriel Chen
-
-Date Started: 03/24/2017
-
-Date Finished: 04/30/2017
-
-Hour spent in total: 1500
-
-### Each person's role in developing the project
-
-#### Mike Liu:
-1. The leader in designing, establishing and heavily refactoring the general framework for the project, i.e. implementing the Component-Entity-System architecture. Implemented the gameobject root package and gameobject.component.type package.
-2. Design and implemented the entire model package.
-3. Wrote most of the util package.
-4. Heavily refactored many classes on frontend and did a lot of frontend-backend integration. Some examples include GameView, ObjectView, many classes in the view.editor packages.
-
-#### Bihan Zhuang:
+### My Responsibilities:
 1. Participated in designing and establishing the general framework -- Component-Entity-System architecture. Wrote part of the gameobject.component package and component.type package. 
 2. Designed and implemented AI and AI system; heavily integrated and tested frontend-backend for making new templates and adding new components. Designed and implemented hero and hero control systems.
 3. Designed, implemented and refactored the controller package.
-4. Designed, implemented and refactored the network package for networked game that supports a host and multiple clients. Implemented chatroom over network.
-
-#### Xingyu Chen
-1. The major designer of the backend system structure. 
-2. Programmed the backend system package. Implemented most systems excluding GoalSystem and AISystem. 
-3. Implemented gameobject.Basics Package. Including All Templates, Bricks, Hero, Mushroom, etc...
-4. Designed, Implemented part of gameobject.component package. Including Attack, Belongings, BonusScore, Collider, Generator, Health, Mass.
-5. Designed, Implemented gameobject.basics.CollisionStrategy and gameobject.basics.GeneratorStrategy package.
-6. Designed, Implemented view.editor.componentwindow package, which is in charge of editing each component and returning the GameObject template.
-
-#### Yanbo Fang:
-1. Designed and implemented GoalSystem and GoalStrategies package which utilized the Strategy pattern to maximize flexibility, as well as Level and its related stuff
-2. Participated in designing of the Component Entity System, implemented part of the gameobject.component package such as Animation, Boss, Destination, etc.
-3. Designed, implemented and refactored gameplay HUD, enabled the display of score, level, and goal status and utilized Observer pattern
-4. Worked on the GameView, implemented vertical and horizontal scrolling
-5. Developed the editor in the authroing environment for user to design their goals in their game
-
-#### Yuxiang He
-1. Contributed to the overall design and structure of the Component Entity System design of the program. Also proposed another alternative design to allow objects to interact with each other, i.e. the `Broadcast` system where objects broadcasts messages and gets messages so that they know what is happening in the game and make decisions about their next steps.
-2. Designed and implemented everything in the `PhysicsEngine`, implemented the Strategy design pattern to allow flexible physics behavior of objects in the game.
-3. Used physics laws to make sure the simulation is realistic. (Of course we can switch some effects ON/OFF to make the game more playable in some cases)
-4. Added some utilities in the `util` package such as `Vector2D` to make calculations and overall handling of position and speed data easier.
-
-#### Yuansong Feng
-1. Designer for the game front end and led the game authoring environment.
-Design and implement the game authoring layout and look-and-feel. For example, how to arrange the menu bar, canvas view and inventory. 
-2. Developed a set of UI utilities including image processing package (cropping, scaling, decorating, etc.), drag and drop nodes, resizable node, window slide-in effect and other reactive UI elements. 
-3. Created the Minimap view for the game authoring that is convenient for game developer to view the general design layout. 
-4. Employed strategy pattern to build the grid system. 
-
-#### Wei-Ting Yeh
-1. Designer of the front end and worked on both game authoring environment and game player.
-2. Design and implement AttributeEditorView, which shows the attributes of the object clicked in the canvas and allows the author to set values for the attributes.
-3. Implemented CustomObjectView, which allows the author to create his own template, by loading image, choosing and setting values of attributes, choosing its type, and setting its name and description.
-4. Implemented front end Championpool, which allows user to choose his or her preferred champion in the game player.
-
-#### Gabriel Chen
-1. Design and implement the front end. Worked on both game authoring environment and game player.
-2. Design and implement Gameplay HUD, which displays the HUD designed by game maker during gameplay.
-3. Design and implement HUD editor, which allows user to build a custom HUD for their game.
-4. Design and implement HUDConfiguration which allows the HUD settings and custom HUD elements as selected by a game maker to save these settings.
-Implemented parts of GameplayView, and Authoring Environment
-
-
-### Resources used in developing the project
-Official Java Documentation, StackOverflow, Online articles about game development. 
+4. Designed, implemented and refactored the network package for networked game that supports a host and multiple clients. Implemented chatroom over network. 
 
 ### Files used to start the project
 Main.java
-
-### Files used to test the project
-See the folders provided in the folder including testItem, testAI and MarioGame
-
-### Data or resource files required by the project
-See the folder for more details
-
-### Any known bugs, crashes, or problems with the project's functionality
-We are not able to let a dropdown menu to disappear once we click it.
-
 
 ### Information about running the program:
 
@@ -133,7 +62,3 @@ Networked chatroom for all the players.
 The background color of the splash screen changes in vary of time.
 9. There is different background music for every stage, and has sound effects when player wins or loses.
 10. The user creates a champion pool in the game authoring environment to allow the user to choose his or her preferred champion in the game player.
-
-### Your impressions of the assignment to help improve it in the future
-
-This assignment is a super interesting project which we enjoyed and SUFFERED a lot. Our team spend a lot of time together working and debugging. But we still LOVE 308.
